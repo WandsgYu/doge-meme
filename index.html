@@ -225,7 +225,7 @@
           totalProfitUsd += memeProfit;
           document.getElementById(
             "memePrice"
-          ).textContent = `Price: $${memePrice.toFixed(2)}`;
+          ).textContent = `Price: $${memePrice.toFixed(6)}`;
           document
             .getElementById("memeProfit")
             .querySelector("p").textContent = `Profit: $${memeProfit.toFixed(
@@ -242,7 +242,7 @@
           totalProfitUsd += dogeProfit;
           document.getElementById(
             "dogePrice"
-          ).textContent = `Price: $${dogePrice.toFixed(2)}`;
+          ).textContent = `Price: $${dogePrice.toFixed(6)}`;
           document
             .getElementById("dogeProfit")
             .querySelector("p").textContent = `Profit: $${dogeProfit.toFixed(
@@ -251,7 +251,7 @@
 
           // Update doge/meme ratio
           if (memePrice !== null) {
-            const ratio = (dogePrice / memePrice).toFixed(2);
+            const ratio = (dogePrice / memePrice).toFixed(6);
             document.getElementById("dogememeRatio").textContent = ratio;
           }
         }
